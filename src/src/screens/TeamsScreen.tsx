@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, Modal, View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native';
+import { FlatList, Modal, View, Text, TouchableOpacity } from 'react-native';
 import styled from 'styled-components/native';
 import { useTeams, Team } from '../context/TeamContext';
 import theme from '../theme';

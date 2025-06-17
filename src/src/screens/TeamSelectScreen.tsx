@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { useTeams, Team } from '../context/TeamContext';
 import theme from '../theme';
-import { RootStackParamList } from '../types';
+import { RootStackParamList } from '../../types';
 
 const Container = styled.View`
   flex: 1;

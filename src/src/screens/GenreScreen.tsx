@@ -3,7 +3,7 @@ import { View, Text, ActivityIndicator, Alert } from 'react-native';
 import styled from 'styled-components/native';
 import { useNavigation, useRoute, NavigationProp } from '@react-navigation/native';
 import theme from '../theme';
-import { RootStackParamList } from '../types';
+import { RootStackParamList } from '../../types';
 
 const genresList = [
   'Pop', 'Rock', 'Hip-Hop', 'Electronic', 'Jazz', 'Classical', 'Country', 'R&B', 'Indie', 'Metal'

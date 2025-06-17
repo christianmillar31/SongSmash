@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 import MultiSlider from '@ptomasroos/react-native-multi-slider';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import theme from '../theme';
-import { RootStackParamList } from '../types';
+import { RootStackParamList } from '../../types';
 
 const DIFFICULTY_LABELS = ['easy', 'medium', 'hard', 'expert'] as const;
 type Difficulty = typeof DIFFICULTY_LABELS[number];

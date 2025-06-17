@@ -4,12 +4,12 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { ThemeProvider } from 'styled-components/native';
-import TeamsScreen from '../src/screens/TeamsScreen';
-import DifficultyScreen from '../src/screens/DifficultyScreen';
-import GenreScreen from '../src/screens/GenreScreen';
-import GameScreen from '../src/screens/GameScreen';
-import { TeamProvider } from '../src/context/TeamContext';
-import theme from '../src/theme';
+import TeamsScreen from './src/screens/TeamsScreen';
+import DifficultyScreen from './src/screens/DifficultyScreen';
+import GenreScreen from './src/screens/GenreScreen';
+import GameScreen from './src/screens/GameScreen';
+import { TeamProvider } from './src/context/TeamContext';
+import theme from './src/theme';
 import { View, Text } from 'react-native';
 
 const Tab = createBottomTabNavigator();

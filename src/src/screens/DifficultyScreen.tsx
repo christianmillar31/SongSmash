@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import styled from 'styled-components/native';
 import MultiSlider from '@ptomasroos/react-native-multi-slider';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
@@ -75,8 +75,10 @@ const DifficultyScreen: React.FC = () => {
         containerStyle={{ marginHorizontal: 16 }}
       />
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 8 }}>
-        {DIFFICULTY_LABELS.map((label, idx) => (
-          <RangeText key={label} style={{ fontSize: 14, color: theme.colors.text }}>{label.charAt(0).toUpperCase() + label.slice(1)}</RangeText>
+        {DIFFICULTY_LABELS.map((label) => (
+          <RangeText key={label} style={{ fontSize: 14, color: theme.colors.text }}>
+            {label.charAt(0).toUpperCase() + label.slice(1)}
+          </RangeText>
         ))}
       </View>
       <NextButton enabled onPress={handleNext}>

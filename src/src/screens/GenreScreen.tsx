@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ActivityIndicator, Alert } from 'react-native';
+import { ActivityIndicator } from 'react-native';
 import styled from 'styled-components/native';
 import { useNavigation, useRoute, NavigationProp } from '@react-navigation/native';
 import theme from '../theme';
@@ -63,7 +63,7 @@ const GenreScreen: React.FC = () => {
   const { teams, difficultyRange } = (route.params || {}) as any;
   const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
   const [selectedDecades, setSelectedDecades] = useState<string[]>([]);
-  const [loading, setLoading] = useState(false);
+  const loading = false;
 
   const toggleGenre = (genre: string) => {
     setSelectedGenres(prev =>

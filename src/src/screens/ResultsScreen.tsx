@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, FlatList } from 'react-native';
+import { Text, FlatList } from 'react-native';
 import styled from 'styled-components/native';
 import theme from '../theme';
 

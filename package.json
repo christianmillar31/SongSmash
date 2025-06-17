@@ -12,6 +12,7 @@
     "lint": "eslint '../src/**/*.{ts,tsx}' --fix"
   },
   "dependencies": {
+    "@react-native-community/slider": "^4.5.7",
     "expo": "^53.0.11"
   }
 }

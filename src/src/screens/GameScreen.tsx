@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet, FlatList } from 'react-native';
+import { View, Text, TouchableOpacity, FlatList } from 'react-native';
+import Slider from '@react-native-community/slider';
 import { Audio } from 'expo-av';
 import { useRoute } from '@react-navigation/native';
 import styled from 'styled-components/native';
@@ -30,7 +31,7 @@ const PlayButton = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
 `;
-const ProgressSlider = styled.Slider`
+const ProgressSlider = styled(Slider)`
   width: 100%;
   height: 40px;
 `;

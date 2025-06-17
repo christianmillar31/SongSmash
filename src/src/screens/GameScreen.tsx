@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet, FlatList } from 'react-native';
+import { View, Text, TouchableOpacity, FlatList } from 'react-native';
 import { Audio } from 'expo-av';
 import { useRoute } from '@react-navigation/native';
 import styled from 'styled-components/native';
@@ -64,7 +64,7 @@ const SheetHandle = styled.View`
 
 const GameScreen: React.FC = () => {
   const route = useRoute<any>();
-  const { teams, genres, decades, difficultyRange, tracks } = route.params || {};
+  const { teams, tracks } = route.params || {};
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [sound, setSound] = useState<Audio.Sound | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -102,8 +102,11 @@ const GameScreen: React.FC = () => {
 
   React.useEffect(() => {
     loadAudio();
-    return () => { if (sound) sound.unloadAsync(); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    return () => {
+      if (sound) {
+        sound.unloadAsync();
+      }
+    };
   }, [currentTrackIndex]);
 
   const togglePlayPause = async () => {

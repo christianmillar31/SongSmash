@@ -3,6 +3,7 @@ const theme = {
     background: '#F9FAFB',
     text: '#333333',
     accent: '#1DB954',
+    white: '#FFFFFF',
   },
   spacing: {
     small: 8,
@@ -15,4 +16,6 @@ const theme = {
   },
 };
 
-export default theme; 
+export type Theme = typeof theme;
+
+export default theme;
